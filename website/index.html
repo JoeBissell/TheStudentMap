@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.maptiler.com/maptiler-geocoder/v1.1.0/maptiler-geocoder.js"></script> 
+    <link href="https://cdn.maptiler.com/maptiler-geocoder/v1.1.0/maptiler-geocoder.css" rel="stylesheet" />
+
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <link href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" rel="stylesheet" />
+    <title>The Student Map </title>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="sidebar">
+        <div id="close-sidebar">X</div>
+        <header>
+            <h1>The Student Map</h1>
+            <p>The ultimate finder of student discounts on food, drinks, clothings entertainment and everything.</p>
+
+            <div class="inline-container">
+                <input id="searchfield" type="text" placeholder="Enter your city to find nearby student discounts...">
+                <!-- <div id="search"></div> -->
+            </div>
+            <hr>
+        </header>
+            <div id="filters">
+            <section id="topics-heading">
+                <h2>Discount Topics</h2>
+                <div>
+                    <div class="inline-container toggle-container" > 
+                        <div class="toggle global"><div class="toggle-circle active"></div></div>
+                        <span>Show All</span>
+                    </div>
+                    <div class="inline-container toggle-container" > 
+                        <div class="toggle inactive"><div class="toggle-circle inactive"></div></div>
+                        <span>Just Drinks</span>
+                    </div>
+                </div>
+            </section>
+            <section class="entertainment-filter"> 
+                <div class="subheading-container" id="entertainment">
+                    <h3>Entertainment</h3>
+                    <div class="grid">
+                        <div>
+                            <div class="bullet entertainment"><div class="bullet-circle entertainment"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Resturants</span>
+                        </div>
+                        <div>
+                            <div class="bullet entertainment"><div class="bullet-circle entertainment"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Drinks (Bars & Clubs) </span>
+                        </div>
+                        <div>
+                            <div class="bullet entertainment"><div class="bullet-circle entertainment"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Activies</span>
+                        </div>
+                        <div>
+                            <div class="bullet entertainment"><div class="bullet-circle entertainment"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Other</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="shopping-filter"> 
+                <div class="subheading-container" id="shopping">
+                    <h3>Shopping</h3>
+                    <div class="grid">
+                        <div>
+                            <div class="bullet shopping"><div class="bullet-circle shopping"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Clothes</span>
+                        </div>
+                        <div>
+                            <div class="bullet shopping"><div class="bullet-circle shopping"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Electronics </span>
+                        </div>
+                        <div>
+                            <div class="bullet shopping"><div class="bullet-circle shopping"></div></div>
+                            <img src="../images/foodanddrink.png" alt="Food and Drink icon"> 
+                            <span>Other</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <hr>
+                <h2>Discount Availability</h2>
+                <div class="inline-container">Only show discounts available now</div>
+                <div id="availability-container">
+                    <div>
+                        <h3> Days </h3>
+                        <div><div class="bullet"><div class="bullet-circle active"></div></div> <span> Everyday </span></div>
+                        <div><div class="bullet"><div class="bullet-circle"></div></div> <span> Mon - Thurs </span></div>
+                        <div><div class="bullet"><div class="bullet-circle"></div></div> <span> Weekends </span></div>
+                    </div>
+                    <div>
+                        <h3> Times </h3>
+                            <div><div class="bullet"><div class="bullet-circle active"></div></div> <span> All day </span></div>
+                            <div><div class="bullet"><div class="bullet-circle"></div></div> <span> Breakfast </span></div>
+                            <div><div class="bullet"><div class="bullet-circle"></div></div> <span> Lunch Time </span></div>
+                            <div><div class="bullet"><div class="bullet-circle"></div></div> <span> Evening </span></div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <hr>
+            <p>Created by <a href="https://www.facebook.com/joe.bissell.319" target="_blank">Joe Bissell</a>, student at the <a href="https://www.uwe.ac.uk/" target="_blank">University of the West of England (UWE)</a></p>
+            <div id="footer-container">
+                <div>About</div>
+                <div>Github</div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
